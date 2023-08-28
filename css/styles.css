@@ -1,0 +1,14 @@
+.bgimage {
+    background-image: url("../images/reptiles.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+}
+
+header{
+    color: brown;
+    }
+
+div {
+    background-color: lightgoldenrodyellow;
+}

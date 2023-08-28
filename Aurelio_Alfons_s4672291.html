@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Author: Aurelio Hevi Alfons -->
+<!-- Finnish at: 17 november 2022 -->
+<!-- BOOTSTRAP PORTFOLIO -->
+
+<head>
+    <title>Domain</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<!------------------------- Head link & Scripts ------------------------------------>
+
+<!------------------------------------ Navbar -------------------------------------->
+
+<body data-spy="scroll" data-target="#navbar-site" data-offset="80">
+    <!-------------------------------- Style --------------------------------------->
+    <style>
+        img {
+            width: 100%;
+            height: 200px;
+            max-height: 200px;
+        }
+
+        #changeheight {
+            height: 300px;
+            max-height: 300px;
+        }
+
+        body {
+            background-image: url(Picture/aeth.jpg);
+            background-repeat: repeat;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ol {
+            color: azure;
+        }
+
+        #pgrid {
+            color: azure;
+            border: 2px solid;
+            background-color: rgb(160, 12, 84);
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            height: 50%;
+            max-height: 50%;
+        }
+
+        form {
+            color: white;
+        }
+
+        table {
+            color: whitesmoke;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        #p0,
+        #p1jumbo,
+        #hjumbo {
+            color: navy
+        }
+
+        #thead1,
+        #tbody1,
+        #tablewhite {
+            color: aliceblue;
+        }
+
+        nav {
+            background-image: url(Picture/navBG.jpg);
+        }
+
+        .bg-text {
+            border: rgb(239, 201, 12);
+            border-radius: 2px;
+            padding: 4px;
+        }
+
+        .bg-text:hover {
+            background-color: rgb(245, 214, 8);
+            border-radius: 8px;
+            box-shadow: 0 0 8px;
+            padding: 6px;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        #profile {
+            width: 150px;
+            height: 150px;
+        }
+
+        #nestedProfile {
+            width: 80px;
+            height: 80px;
+        }
+
+        #mediaObject {
+            background-color: rgb(17, 3, 36);
+        }
+
+        .footer {
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            position: relative;
+            background-image: url(Picture/navbg.jpg);
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 50%;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .data-content,
+        .data-title {
+            color: antiquewhite;
+            background-color: slategrey;
+        }
+    </style>
+    <!-------------------------------- Style --------------------------------------->
+
+    <!------------------------------ Navigation Bar ---------------------------------------------->
+    <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm fixed-top right">
+
+        <div class="container">
+            <button type="button" class="btn btn-basic" data-toggle="popover" title="Logo Made"><img id="logo"
+                    src="Picture/logo.png" alt="logo"></button>
+
+            <a class="navbar-brand" href="#name">Aurelio Hevi Alfons &#9889 (s4672291)</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home &#127969</a></li>
+                <li class="nav-item"><a class="nav-link" href="#form">Form</a></li>
+                <li class="nav-item"><a class="nav-link" href="#table">Table 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cara">Carousel</a></li>
+                <li class="nav-item"><a class="nav-link" href="#table2">Table 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="#jumbo">Jumbotron</a></li>
+                <li class="nav-item"><a class="nav-link" href="#coll">Collapsible</a></li>
+                <li class="nav-item"><a class="nav-link" href="#card">Card</a></li>
+
+                <!--------------------------- Dropdown ---------------------------->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">More
+                        Exercise</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#modal">Modal ex</a>
+                        <a class="dropdown-item" href="#media">Media Obj ex</a>
+                        <a class="dropdown-item" href="#tool">ToolTip ex</a>
+                        <a class="dropdown-item" href="#extra">Another ex</a>
+                        <a class="dropdown-item" href="#foot">Footer</a>
+                    </div>
+                </li>
+                <!-------------------------- Dropdown ----------------------------->
+            </ul>
+        </div>
+    </nav>
+    <!------------------------------ Navigation Bar ---------------------------------------------->
+
+    <!------------------------------ Home/Picture grid --------------------------------------->
+    <div class="container mt-3" id="grid">
+        <br> <br> <br> <br>
+        <!-- Row 1 -->
+        <h2>Home</h2>
+        <a id="home"></a>
+        <p>Places I want to visit: &#9996</p>
+        <div class="row">
+            <section class="col">
+                <img src="Picture/tokyo.jpg" alt="Tokyo" class="img-thumbnail">
+                <br><br>
+                <h4 class="bg-text">1. Tokyo &#127800</h4>
+                <p id="pgrid">Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis. It is also
+                    one of
+                    Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages
+                    west of the city center. The Izu and Ogasawara Islands are also part of Tokyo.</p>
+            </section>
+
+            <section class="col">
+                <img src="Picture/cairo.jpg" alt="Cairo - Egypt" class="img-thumbnail">
+                <br><br>
+                <h4 class="bg-text">2. Cairo - Egypt &#128010</h4>
+                <p id="pgrid">Cairo is the capital of Egypt and one of the largest cities in Africa. Cairo has stood for
+                    more than
+                    1,000 years on the same site on the banks of the Nile River, primarily on the eastern shore.</p>
+            </section>
+
+            <section class="col">
+                <img src="Picture/ROME.jpg" alt="Rome" class="img-thumbnail">
+                <br><br>
+                <h4 class="bg-text">3. Rome &#129367</h4>
+                <p id="pgrid">Rome is famous for the Colosseum, the Roman Forum, and a sprawling metropolis of Classical
+                    architecture. But the city is known for more than its ancient history: it is home to the Spanish
+                    Steps, the Trevi Fountain, incredible food, gardens and art, and a world-famous film industry.
+                </p>
+            </section>
+        </div>
+        <!-- End of row 1--><br>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <section class="col">
+                <img src="Picture/akihabara.jpg" alt="Akihabara" class="img-thumbnail">
+                <br><br>
+                <h4 class="bg-text">4. Akihabara &#127747</h4>
+                <p id="pgrid">Akihabara (秋葉原), also called Akiba after a former local shrine, is a district in central
+                    Tokyo that
+                    is famous for its many electronics shops and has also gained recognition as the center of Japan's
+                    otaku (diehard fan) culture.
+                </p>
+            </section>
+
+            <section class="col">
+                <img src="Picture/Santorini-Greece.jpg" alt="Santorini-Greece" class="img-thumbnail">
+                <br><br>
+                <h4 class="bg-text">5. Santorini-Greece &#127927 </h4>
+                <p id="pgrid">Santorini is renowned for its tradition in wine making and boasts vast vineyards and fine
+                    wine
+                    varieties. Its boutique wineries are a must as they offer the ultimate ambrosial experience.
+                </p>
+            </section>
+
+            <section class="col">
+                <img src="Picture/tgw of china.jpeg" alt="TGW of china" class="img-thumbnail">
+                <br><br>
+                <h4 class="bg-text">6. Great Wall Of China &#x1F409</h4>
+                <p id="pgrid">Stretching thousands of miles, the Great Wall is the longest man-made structure in the
+                    world, but
+                    that isn't its only significance. It was important in defending China from northern invasion for
+                    centuries, and has become a national symbol, and China's top tourist sight.
+                </p>
+            </section>
+        </div>
+        <!-- End of row 2 -->
+        <!------------------------------ Home/Picture grid ------------------------------------------->
+
+        <!-------------------------------------- Form Page ------------------------------------------->
+        <a id="form"></a>
+        <br> <br>
+        <!-- Start of form section -->
+        <h2>Form</h2>
+        <p>
+            HTML Form is a document which stores information of a user on a web server using interactive controls. An
+            HTML form contains different kind of information such as username, password, contact number, email id etc.
+            The elements used in an HTML form are check box, input box, radio buttons, submit buttons etc. Using these
+            elements the information of an user is submitted on a web server.
+        </p>
+
+        <h4>This is an example of forms: &#127756</h4>
+
+        <div>
+            <form action="/action_page.php">
+                <!-- 1. Email Form -->
+                <div class="form-group">
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" class="form-control" placeholder="Enter Email" id="email" required="required">
+                </div>
+                <!-- 2. Email Form -->
+                <div class="form-group">
+                    <label for="pwd">Password </label><br>
+                    <input type="password" class="form-control" placeholder="Enter Password" id="pwd"
+                        required="required">
+                </div>
+
+                <!-- 3. Phone number -->
+                <div class="form-group">
+                    <label for="number">Phone Number</label><br>
+                    <input type="text" class="form-control" placeholder="Enter phone number" id="phn number"
+                        required="required">
+                </div>
+
+                <!-- 4. Date of birth -->
+                <div class="form-group">
+                    <label for="number">Birth date</label><br>
+                    <input type="date" class="form-control" placeholder="Enter phone number" id="date"
+                        required="required">
+                </div>
+
+                <!-- 5. Drop down box -->
+                <div class="form-group">
+                    <label for="number">Rate this domain!</label><br>
+                    <select name="rating">
+                        <option value="Meh">Meh</option>
+                        <option value="Avg">Average</option>
+                        <option value="Good">Good</option>
+                        <option value="Awsm">Awesome</option>
+                        <option value="Breath">Breathtaking</option>
+                        <option value="BB">Big Brain</option>
+                    </select>
+                </div>
+
+                <!-- 6. Checckbox Form -->
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox">Do you like this website</label>
+                </div>
+                <div>
+                    <input type="submit" value="Heck Yeah" class="form-group" />
+                </div>
+            </form>
+            <br> <br> <br>
+        </div>
+        <!-------------------------------------- Form Page ------------------------------------------->
+
+        <!-------------------------------------- Table Page ------------------------------------------>
+        <a id="table"></a>
+        <div>
+            <div class="container mt-3">
+                <h2>Most Visited cities in the world: &#127758</h2>
+                <h6>Which city to visit?</h6>
+                <p>
+                    There are a lot of holiday destination to choose from. Starting from Asia, Europe, etc. Below is
+                    table
+                    of which cities are visited the most.
+                </p><br>
+
+                <!-- Filter -->
+                <input class="form-control" id="myInput" type="text" placeholder="Enter city name..">
+                <br>
+                <table class="table table-bordered" style="color: white;">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th></th>
+                            <th>Destinations</th>
+                            <th>Continent</th>
+                            <th>2 letter code</th>
+                            <th>Total international travelers</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                        <tr>
+                            <th>1. </th>
+                            <td>Bangkok, Thailand</td>
+                            <td>Asia</td>
+                            <td>TH</td>
+                            <td>22.78 million</td>
+                        </tr>
+                        <tr>
+                            <th>2. </th>
+                            <td>Paris, France</td>
+                            <td>Europe</td>
+                            <td>FR</td>
+                            <td>19.10 million</td>
+                        </tr>
+                        <tr>
+                            <th>3. </th>
+                            <td>London, United Kingdom</td>
+                            <td>Europe</td>
+                            <td>GB</td>
+                            <td>19.09 million</td>
+                        </tr>
+                        <tr>
+                            <th>4. </th>
+                            <td>Dubai, United Arab Emirates</td>
+                            <td>Asia</td>
+                            <td>AE</td>
+                            <td>15.93 million</td>
+                        </tr>
+                        <tr>
+                            <th>5. </th>
+                            <td>Singapore, Singapore</td>
+                            <td>Asia</td>
+                            <td>SG</td>
+                            <td>14.67 million</td>
+                        </tr>
+                        <tr>
+                            <th>6. </th>
+                            <td>Kuala Lumpur, Malaysia</td>
+                            <td>Asia</td>
+                            <td>MY</td>
+                            <td>13.79 million</td>
+                        </tr>
+                        <tr>
+                            <th>7. </th>
+                            <td>New York City, US</td>
+                            <td>North America</td>
+                            <td>US-NY</td>
+                            <td>13.60 million</td>
+                        </tr>
+                        <tr>
+                            <th>8. </th>
+                            <td>Istanbul, Turkey</td>
+                            <td>Europe, Asia</td>
+                            <td>TR</td>
+                            <td>13.40 million</td>
+                        </tr>
+                        <tr>
+                            <th>9. </th>
+                            <td>Tokyo, Japan</td>
+                            <td>Asia</td>
+                            <td>JP</td>
+                            <td>12.93 million</td>
+                        </tr>
+                        <tr>
+                            <th>10. </th>
+                            <td>Antalya, Turkey</td>
+                            <td>Asia</td>
+                            <td>TR</td>
+                            <td>12.41 million</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-------------------------------------- Table Page ------------------------------------------>
+
+            <!-------------------------------------- Carousel Page --------------------------------------->
+            <a id="cara"></a>
+            <br> <br> <br>
+            <h2>Scenery illustrations &#127754</h2> <br>
+
+            <br> <br>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-6"></div>
+
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicatiors -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="demo" data-slide-to="1"></li>
+                        <li data-target="demo" data-slide-to="2"></li>
+                        <li data-target="demo" data-slide-to="3"></li>
+                        <li data-target="demo" data-slide-to="4"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img id="changeheight" src="Picture/redsky.jpg" alt="Red Sky"
+                                class="img-thumbnail ">
+                        </div>
+                        <div class="carousel-item"><img id="changeheight" src="Picture/banner4.jpg" alt="orangesky"
+                                class="img-thumbnail img-fluid">
+                        </div>
+                        <div class="carousel-item"><img id="changeheight" src="Picture/Bg_dope.jpg" alt="bluesky"
+                                class="img-thumbnail">
+                        </div>
+                        <div class="carousel-item"><img id="changeheight" src="Picture/banner5.jpg" alt="pinksky"
+                                class="img-thumbnail">
+                        </div>
+                        <div class="carousel-item"><img id="changeheight" src="Picture/cyansky.jpg" alt="cyansky"
+                                class="img-thumbnail">
+                        </div>
+
+                    </div>
+
+                    <br> <br> <br>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+                <!-- Of the grid -->
+                <div>
+                    <div class="col"></div>
+                </div><br><br><br><br><br>
+                <!-------------------------------------- Carousel Page --------------------------------------->
+
+                <!------------------------------------ Table Page 2 ------------------------------------------>
+                <h2>Destination Table &#127790</h2><br>
+                <p></p><br><br><br>
+            </div>
+
+            <div class="container" id="table2" style="background-color: rgb(239, 189, 25)" ;>
+                <a id="table2"></a><br>
+                <h2 align="center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                    Destination, Airline, Prizes, etc.
+                </h2>
+                <p align="center"
+                    style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-variant: small-caps;">
+                    This table cover upcomming destination from Melbourne, Australia base of Skyscanner:</p>
+                <table class="table table-dark table-striped table-hover">
+                    <thead id="thead">
+                        <tr>
+                            <th></th>
+                            <th>Destination</th>
+                            <th>Most popular airline</th>
+                            <th>Prize</th>
+                            <th>Average flight time</th>
+                            <th>Flights per week</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <th>1. </th>
+                            <td>Sidney</td>
+                            <td>Qantas</td>
+                            <td>$222</td>
+                            <td>1 hr, 46 mins</td>
+                            <td>5860</td>
+                        </tr>
+                        <tr>
+                            <th>2. </th>
+                            <td>London</td>
+                            <td>Etihad Airways</td>
+                            <td>$2,269</td>
+                            <td>23 hrs, 35 mins</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <th>3. </th>
+                            <td>Bangkok</td>
+                            <td>Turkish Airlines</td>
+                            <td>$1,653</td>
+                            <td>9 hrs, 30 mins</td>
+                            <td>142</td>
+                        </tr>
+                        <tr>
+                            <th>4. </th>
+                            <td>Paris</td>
+                            <td>Emirates</td>
+                            <td>$2,546</td>
+                            <td>22 hrs, 23 mins</td>
+                            <td>5860</td>
+                        </tr>
+                        <tr>
+                            <th>5. </th>
+                            <td>New Delhi</td>
+                            <td>Singapore Airlines</td>
+                            <td>$2,233</td>
+                            <td>15 hrs, 51 mins</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <th>6. </th>
+                            <td>Perth</td>
+                            <td>Qantas</td>
+                            <td>$1,275</td>
+                            <td>3 hrs, 48 mins</td>
+                            <td>1975</td>
+                        </tr>
+                        <tr>
+                            <th>7. </th>
+                            <td>Manila Ninoy Aquino</td>
+                            <td>Scoot</td>
+                            <td>$943</td>
+                            <td>13 hrs, 18 mins</td>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <th>8. </th>
+                            <td>Bali</td>
+                            <td>Malindo</td>
+                            <td>$1,123</td>
+                            <td>5 hrs, 50 mins</td>
+                            <td>5860</td>
+                        </tr>
+                        <tr>
+                            <th>9. </th>
+                            <td>Brisbane</td>
+                            <td>Virgin Australia</td>
+                            <td>$400</td>
+                            <td>2 hrs, 15 mins</td>
+                            <td>4786</td>
+                        </tr>
+                        <tr>
+                            <th>10. </th>
+                            <td>Auckland International</td>
+                            <td>Qantas</td>
+                            <td>$787</td>
+                            <td>3 hrs, 54 mins</td>
+                            <td>1244</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+            </div>
+        </div>
+        <!------------------------------------ Table Page 2 ------------------------------------------>
+
+        <!-------------------------------------- Jumbotron ------------------------------------------->
+        <br><br><br><br><br>
+        <a id="jumbo"></a>
+        <div class="container">
+            <div class="jumbotron" id="jumbo">
+                <h2 id="hjumbo">Why should you travel?</h2>
+                <p id="p1jumbo">Once in a while you get tired of your work or study, everyone experience fatigue that is
+                    why people should travel and explore, relieve stress, chill out, spend time with family, and in
+                    return you will be more productive once you finish your break and return to whatever you're doing.
+                </p><br>
+                <img src="Picture/Jbanner.jpg" class="container" alt="Pink Sky"><br><br>
+
+                <p id="p0">Benfits that came with traveling such as relaxing your mind, makes you happier &#127905,
+                    recharge your
+                    energy, relieves stress & anxiety, experience new things, physically healthier, and boost your
+                    creativity.</p>
+            </div>
+            <p class="container">-----------------------------------------------------------This is The End of Jumbotron
+                Page-------------------------------------------------------------------</p>
+        </div><br><br><br><br><br>
+        <!-------------------------------------- Jumbotron ------------------------------------------->
+
+        <!--------------------------------------- Collapse ------------------------------------------->
+        <a id="coll"></a>
+        <div class="container mt-3">
+            <br><br>
+            <h2>Things to look out for when traveling!</h2>
+            <p>Items to bring:</p>
+            <button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#demo1">Don't forget
+                your passport!</button>
+            <div id="demo1" class="collapse">
+                <br>
+                <ul style="color: white;">
+                    <li>Passport</li>
+                    <li>Suitcase</li>
+                    <li>Documents</li>
+                    <li>Financial</li>
+                    <li>Clothes</li>
+                    <li>medications</li>
+                    <li>Swimsuit and cold wear</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Things to consider when visiting overseas countries </h2>
+            <a href="#demo2" class="btn btn-warning" data-bs-toggle="collapse">Respect!</a>
+            <div id="demo2" class="collapse">
+                <ul style="color: white;">
+                    <br>
+                    <li>Don't litter</li>
+                    <li>Respect the culture and rules in the country you're visiting</li>
+                    <li>Support local souvenirs</li>
+                    <li>Try local foods</li>
+                    <li>Research the country you're visiting</li>
+                    <li>Plan ahead</li>
+                    <li>Be mindfull of you're actions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h2>Things to avoid when travelling</h2>
+            <a href="#demo3" class="btn btn-warning" data-bs-toggle="collapse">No Overpacking!!!</a>
+            <div id="demo3" class="collapse">
+                <ul style="color: white;">
+                    <br>
+                    <li>Overpacking</li>
+                    <li>Relying totally on guise books</li>
+                    <li>Forgetting the budget</li>
+                    <li>Blindly trusting dircetions from local</li>
+                    <li>Booking flights with a short layover</li>
+                    <li>Not double checking your documents and booking for errors</li>
+                    <li>Tempting pickpockets</li>
+                </ul>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br>
+        <!--------------------------------------- Collapse ------------------------------------------->
+
+        <!----------------------------------------- Card --------------------------------------------->
+        <a id="card"></a>
+        <div class="container">
+            <h2>4 Countries in 4 weeks - Trip to Europe</h2>
+            <p>There is no other location in the world like Europe! Its spectacular natural surroundings couldn't be
+                more varied, and its magnificent monuments disclose successive layers of history. From untamed to
+                refined, its nations combine a kaleidoscope of cultural traditions, and its landscapes are as as
+                fascinating as its history.</p>
+
+            <p>Many of you will undoubtedly disagree with my selections since, as they say, beauty is in the eye of the
+                beholder.</p>
+            <br>
+            <p><strong>Note:</strong> The cards are displayed vertically on small screen (less than 576px)</p>
+            <div class="card-deck">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <img src="Picture/Paris.jpg" alt="Paris"><br>
+                        <h4>Paris</h4>
+                        <ol align="center">
+                            <li>Visit the Eiffel Tower & the Latin Quarter</li>
+                            <li>Visit Arc de Triomphe</li>
+                            <li>Explore Le Marais & Eat Pastries on Rue Royale</li>
+                            <li>Enjoy a “Bloody Mary” in Its Birthplace</li>
+                            <li>Shop on rue du Faubourg Saint-Honoré</li>
+                            <li>Visit the Château de Versailles</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="card bg-warning">
+                    <div class="card-body text-center">
+                        <img src="Picture/London.jpg" alt="London">
+                        <h4>London</h4>
+                        <ol align="center">
+                            <li>The London Eye</li>
+                            <li>Madame Tussauds London</li>
+                            <li>Tower of London</li>
+                            <li>Buckingham Palace</li>
+                            <li>The London Eye</li>
+                            <li>London Transport Museum</li>
+                            <li>Take the tube</li>
+                            <li>Sky Garden</li>
+                            <li>Ride the red bus</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body text-center">
+                        <img src="Picture/Venice.jpeg" alt="Paris">
+                        <h4>Venice</h4>
+                        <ol align="center">
+                            <li>St. Mark's Basilica</li>
+                            <li>St. Mark's Square</li>
+                            <li>Canal Grande</li>
+                            <li>Ponte di Rialto</li>
+                            <li>Doges Palace</li>
+                            <li>Bridge of Sighs</li>
+                            <li>Ride a Vaporetto through the Grand Canal</li>
+                            <li>San Marco Campanile</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body text-center">
+                        <img src="Picture/Budapest.jpeg" alt="Paris">
+                        <h4>Budapest</h4>
+                        <ol align="center">
+                            <li>The Shoes on the Danube Bank</li>
+                            <li>Great Market Hall</li>
+                            <li>Margaret Island</li>
+                            <li>Buda Castle</li>
+                            <li>The Chain Bridge</li>
+                            <li>Fisherman's Bastion</li>
+                            <li>Parliament House</li>
+                            <li>Dohány Street Synagogue</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        <!----------------------------------------- Card --------------------------------------------->
+
+        <!----------------------------------------- Modal -------------------------------------------->
+        <br><br><a id="modal"></a><br><br>
+        <div class="container">
+            <h2>Travel advice: </h2><br>
+            <!------------ Modal Button ---------->
+            <button type="button" class="btn- btn-warning" data-toggle="modal" data-target="#showModal">voilà</button>
+
+            <!------------ The Modal code ------------>
+            <div class="modal" id="showModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="color: black">Traversing through places you've never went.</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <p style="color: black">Travellers are strongly advised to travel with comprehensive travel insurance as a matter of routine and to declare any underlying health conditions to their travel insurer. Travellers should be aware that medical care abroad is often available only at private medical facilities and may be costly.</p>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer" style="color: black">
+                            <p style="color:black">Travellers should know the procedures to follow to obtain assistance and reimbursement. A copy of the insurance certificate and contact details should be carried with other travel documents in the hand luggage.</p>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br><br>
+
+            <!-- modal 2 -->
+            <!------------ Modal Button ---------->
+            <button type="button" class="btn- btn-warning" data-toggle="modal" data-target="#showModal1">Open Sesame</button>
+
+            <!------------ The Modal code ------------>
+            <div class="modal" id="showModal1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="color: black">Travellers are advised to have a medical examination on their return if they:</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <ul style="color: black">
+                                <li>return with a fever from a country where malaria is or may be present, so that malaria can be excluded as a cause of their illness</li>
+                                <li>suffer from a chronic disease, such as cardiovascular disease, diabetes mellitus, or chronic respiratory disease or have been taking anticoagulants</li>
+                                <li>experience illness in the weeks following their return home, particularly if fever, persistent diarrhoea, vomiting, jaundice, urinary disorders, skin disease or genital infection occurs</li>
+                            </ul>
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer" style="color: black">
+                            <p style="color: black">Travellers should provide medical personnel with information on recent travel, including destination, and purpose and duration of visit. Frequent travellers should give details of all journeys that have taken place in the preceding weeks and months including pre-travel vaccinations received and malaria chemoprophylaxis taken.</p>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+        <!----------------------------------------- Modal -------------------------------------------->
+
+        <!---------------------------------- Media Object -------------------------------------------->
+        <a id="media"></a><br><br>
+        <div class="container mt-3" id="mediaObject">
+            <h2>Media Object &#9749</h2><br>
+            <div class="media border p-3 container">
+                <img id="profile" src="Picture/pro Profile.jpeg" class="rounded-circle img-thumbnail img-fluid"
+                    alt="profile"><br>
+                <div class="media-body container mt-3">
+                    <h3>Aurelio Hevi Alfons <small><i> Posted on November 16 2022</i></small></h3>
+                    <p>I enjoy going on a lot of trips, exploring, and trying new things. The destinations listed above
+                        are all places I hope to visit someday, but there are still many more that haven't entered my
+                        head.</p><br>
+
+                    <!------- nested media object ----------->
+                    <div class="media p-3">
+                        <img id="nestedProfile" src="Picture/pro Profile.jpeg" alt="profile"
+                            class="mr-3 mt-3 rounded-circle img-thumbnail">
+                        <div class="media-body container mt-3">
+                            <h4>Aurelio Hevi Alfons <small><i>Posted on November 17 2022</i></small></h4>
+                            <p>But right now, Japan is the destination I'm most eager to visit because I adore so many
+                                aspects of it, including its food &#127836, overall aesthetic, games, anime, manga,
+                                traditions,
+                                and, above all, its sakura flowers. &#128516</p>
+                            <p>However, I'm open to suggestions about things to do on my next vacation. &#128511</p>
+                        </div>
+                        <!------- nested media object ----------->
+
+                    </div>
+                </div><br>
+            </div><br>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    <!----------------------------------------- Media -------------------------------------------->
+
+    <!----------------------------------------- Tooltip ------------------------------------------>
+    <a id="tool"></a>
+    <div class="container">
+        <h2>Suggestion on where to go:</h2>
+
+        </p><br>
+        <table class="table table-bordered table-hover container">
+            <thead class="thead-dark" id="thead1">
+                <tr>
+                    <th rowspan="2" colspan="3">What my friends suggest to visit!</th>
+                </tr>
+            </thead>
+            <tbody id="tbody1">
+                <tr>
+                    <td align="center"><button class="btn btn-info btn-md">Johanne</button></td>
+                    <td align="center"><button class="btn btn-success btn-md">Andy</button></td>
+                </tr>
+                <tr>
+                    <td align="center"><button class="btn btn-dark btn-md">Ivan</button></td>
+                    <td align="center"><button class="btn btn-primary btn-md">Maverick</button></td>
+                </tr>
+                <tr>
+                    <td align="center"><button class="btn btn-danger btn-md">Ricky</button></td>
+                    <td align="center"><button class="btn btn-secondary btn-md">Momo</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div><br><br><br>
+    <!----------------------------------------- Tooltip ------------------------------------------>
+
+    <!------------------------------------- Extra: pop-over -------------------------------------->
+    <a id="extra"></a>
+
+    <div class="container">
+        <h3>End of the portfolio</h3>
+        <button class="btn btn-light">Abra kadabra!</button>
+    </div><br><br><br><br>
+    <!------------------------------------- Extra: pop-over -------------------------------------->
+
+    <div class="container alert alert-danger">
+        <strong>Done!</strong> You've made it to the end of this portfolio.
+    </div>
+
+
+    <!--------------------------------------- Footer --------------------------------------------->
+    <a id="foot"></a>
+    <div class="footer text-center container-fluid" style="margin-bottom: 0;">
+
+        <br>
+        <p>Bootstrap Portfolio built by Aurelio Hevi Alfons November 2022</p>
+    </div>
+    <!--------------------------------------- Footer --------------------------------------------->
+
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- For tooltip -->
+    <script>
+        $(document).ready(function () {
+            $('.btn-info').tooltip({ title: "Qatar!", animation: false });
+            $('.btn-success').tooltip({ title: "Paris!", animation: false });
+            $('.btn-dark').tooltip({ title: "Los Angeles!", animation: false });
+            $('.btn-primary').tooltip({ title: "Russia!", animation: false });
+            $('.btn-danger').tooltip({ title: "Germany!", animation: false });
+            $('.btn-secondary').tooltip({ title: "Thailand!", animation: false });
+        });
+    </script>
+    <!-- For Pop-over -->
+    <script>
+        // This is for the final section/pop over
+        $(document).ready(function () {
+            $('.btn-light').popover({ title: "This is the end", content: "These are the contents of my bootstrap portfolio, Thankyou for the attention.", });
+        });
+        // This is to put img in pop over (navbar logo)
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover({
+                placement: 'top',
+                trigger: 'hover',
+                html: true,
+                content: '<div class="media"><img src="Picture/logo.png" class="mr-3" alt="Logo"><div class="media-body"></div></div>'
+            });
+        });
+    </script>
+
+    <!-- Script for filtering -->
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
